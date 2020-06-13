@@ -1,0 +1,22 @@
+
+/*Font Size : ============= */
+.fs12{
+    font-size: 12Px;
+}
+.fs17{
+    font-size: 17px;
+}
+.f23{
+    font-size: 23;;
+}
+/* Text  */
+.txt-ul{
+    text-decoration: underline;
+}
+
+/* Button */
+
+/* Display */ 
+.w50{
+   width: 50% !important; 
+}

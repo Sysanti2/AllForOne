@@ -1,0 +1,57 @@
+.cardContainer {
+    display: flex;
+    width: 100%;
+    height: 80PX;
+    margin: 1rem 15px;
+    padding: 0;
+    border-radius: 0PX;
+    background-color: #F0EFF1;
+ }
+ 
+.rowContainer{
+    width: 100%;
+}
+.card50{
+    width: 50%;
+    background-color: #fff;
+    margin: 0 1rem;
+    display: flex;
+}
+.card100{
+    width: 100%;
+    background-color: #fff;
+    margin: 0 1rem;
+    display: flex;
+}
+
+.cardcontainer50{
+    margin: 0 2rem;
+    display: flex;
+}
+ .cardIcon{
+    width: 31%;
+    justify-content: center;
+    text-align: center;
+    background: #7f5db3;
+    border: none;
+    border-top-left-radius: 5PX;
+    color: #ffffff;
+    border-bottom-left-radius: 5px;
+ }
+ .cardBody{
+    width: 72%;
+    background: #fff;
+    padding: 0 4px;
+    font-size: 12PX;
+
+ }
+ .cardProgres{
+     height: 2PX;
+     background-color: #fff;
+ }
+ .block {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    margin: 0;
+ }
