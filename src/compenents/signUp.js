@@ -2,7 +2,6 @@ import React from 'react';
 
 
 const signUp = React.forwardRef((props,ref) => {
-    console.log(props);
     return (
         <div>
             <div className="container">

@@ -123,7 +123,7 @@ if ( this.state.isLogin)
                 });
     };
     render() {
-        debugger;
+        
         return (
             <div>
            <div className="flex-container">

@@ -2,32 +2,46 @@ import React, {Component, Fragment} from 'react';
 import Table from 'react-bootstrap/Table';
 import {RiEdit2Line} from "react-icons/ri";
 import {AiFillDelete} from "react-icons/ai";
+import Button from 'react-bootstrap/Button';
+
 class Wtable extends Component {
+   
     constructor(props)
     {
         super(props);
     }
+    handleClick=(event) => {
+        this.props.action(event)
+      };
+   
     data = () => {
 
         let header = [];
+        var handleToUpdate  =   this.props.handleToUpdate;
         if (!!this.props.data) 
-            this.props.data.map((data) => {
-                debugger;
+            this.props.data.map((data,index) => {
+           
+                let val = Object.values(data),
+                row =[];
+                val.map( (dataRow)=> {
+                    console.log(dataRow);
+                    row.push( <td key={`td-${dataRow}`}>{dataRow}</td>)
+                })
                 header.push(
-                    <tr>
-                        <td>{data.id}</td>
-                        <td>{data.name}</td>
+                    <tr key={data._id}>
+                       {row}
+                    
                         <td>
                             <div className="tableactions">
                                 <div className="tableaction">
-                                    <a href="#" class="btn btn-primary btn-txt-primary">
+                                    <Button href="#" className="btn btn-primary btn-txt-primary" onClick={() => handleToUpdate(data._id,'Edit')}>
                                         <RiEdit2Line size={'1.5em'}/>
-                                        Edit</a>
+                                        Edit</Button>
                                 </div>
                                 <div className="tableaction">
-                                    <a href="#" class="btn btn-danger btn-txt-primary">
+                                    <Button href="#" className="btn btn-danger btn-txt-primary"  onClick={() => handleToUpdate(data._id,'Delete')}>
                                         <AiFillDelete size={'1.5em'}/>
-                                        Delete</a>
+                                        Delete</Button>
                                 </div>
                             </div>
                         </td>
@@ -39,15 +53,20 @@ class Wtable extends Component {
     }
     columns = () => {
         let columnName = [];
-        if (!!this.props.data) 
+        
+        if (!!this.props.data && this.props.data.length>0) 
             Object.keys(this.props.data[0]).map((data) => {
                 columnName.push(
-                    <th>
+                    <th key={data}>
                         {data}
                     </th>
                 )
             })
         return columnName
+    }
+    editeItem(id)
+    {
+        console.log(id);
     }
     render() {
         return (
