@@ -278,3 +278,6 @@ span.psw {
         margin-top: -270px;
     }
 }
+button.creatAccount.creataccountLink {
+    color: black !important;
+  }

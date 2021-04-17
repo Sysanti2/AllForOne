@@ -7,7 +7,10 @@ import authContext from './context/AuthContext';
 import Users from './Dashboard/users';
 import regions from './Dashboard/regions';
 import categories from './Dashboard/categories';
+import posts from './Dashboard/posts';
+import post from './pages/post';
 import HomePage from './HomePage';
+
 class App extends Component {
     state = {
         token: null,
@@ -41,6 +44,10 @@ class App extends Component {
                         <Route path='/users' component={Users}/>
                         <Route path='/area' component={regions}/>
                         <Route path='/categories' component={categories}/>
+                        <Route path='/posts' component={posts}/>
+                        <Route path='/Commants' component={categories}/>
+                        <Route path='/Post' component={post}/>
+
                         
                          {this.state.token && (<Route path="/home" component={Index}/>)}
                         <Route path="/admin" component={null}/>

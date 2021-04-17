@@ -1033,7 +1033,7 @@ h3 {
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 104, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_header.scss */
   .header-area .main-header-area .Appointment .book_btn {
-    margin-left: 0;
+    margin-left: 12px; 
   }
 }
 
@@ -9357,3 +9357,10 @@ h6 {
 
 
 /*# sourceMappingURL=style.css.map */
+
+.feature-img.PostCover div img {
+  height: 359PX;
+}
+button.creatAccount.creataccountLink {
+  color: black !important;
+}

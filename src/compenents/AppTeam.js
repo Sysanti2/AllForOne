@@ -36,7 +36,7 @@ const AppTeam = () => {
                             </div>
                         </div>
                         <div class="team_info text-center">
-                            <h3>Milani Mou</h3>
+                            <h3>Soukaina</h3>
                             <p>Business Agent</p>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const AppTeam = () => {
                             </div>
                         </div>
                         <div class="team_info text-center">
-                            <h3>Halim Yoka</h3>
+                            <h3>Chaimae</h3>
                             <p>Business Agent</p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ const AppTeam = () => {
                             </div>
                         </div>
                         <div class="team_info text-center">
-                            <h3>Dalim Karma</h3>
+                            <h3>Soukaina</h3>
                             <p>Business Agent</p>
                         </div>
                     </div>
@@ -117,7 +117,7 @@ const AppTeam = () => {
                             </div>
                         </div>
                         <div class="team_info text-center">
-                            <h3>Micky</h3>
+                            <h3>Ahmed El Mehdi</h3>
                             <p>Business Agent</p>
                         </div>
                     </div>

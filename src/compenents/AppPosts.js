@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const post = ()=> {
     let posts = []
     for (let i = 0; i < 3; i++) 
@@ -13,7 +14,7 @@ const post = ()=> {
             <div class="explorer_bottom d-flex">
 
                 <div class="explorer_info">
-                    <h3><a href="single_listings.html">Freshly Food</a></h3>
+                    <h3><a href="/post">Freshly Food</a></h3>
                     <p>700/D, Kings road, Green lane, London</p>
                     <ul>
                         <li> <i class="fa fa-phone"></i>
@@ -76,7 +77,7 @@ const AppPosts = () => {
                                         <i class="flaticon-food"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Freshly Food</a></h3>
+                                        <h3><a href="/post">Freshly Food</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -97,7 +98,7 @@ const AppPosts = () => {
                                             <i class="flaticon-beach"></i>
                                         </div>
                                         <div class="explorer_info">
-                                            <h3><a href="single_listings.html">Saintmartine</a></h3>
+                                            <h3><a href="/post">Saintmartine</a></h3>
                                             <p>700/D, Kings road, Green lane, London</p>
                                             <ul>
                                                 <li> <i class="fa fa-phone"></i>
@@ -118,7 +119,7 @@ const AppPosts = () => {
                                         <i class="flaticon-food-1"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Midnight</a></h3>
+                                        <h3><a href="/post">Midnight</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -139,7 +140,7 @@ const AppPosts = () => {
                                         <i class="flaticon-barbershop"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Barber</a></h3>
+                                        <h3><a href="/post">Barber</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -160,7 +161,7 @@ const AppPosts = () => {
                                         <i class="flaticon-cabin"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Montana Resort</a></h3>
+                                        <h3><a href="/post">Montana Resort</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -181,7 +182,7 @@ const AppPosts = () => {
                                         <i class="flaticon-shop"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Yelled Shopping</a></h3>
+                                        <h3><a href="/post">Yelled Shopping</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -206,7 +207,7 @@ const AppPosts = () => {
                                                 <i class="flaticon-barbershop"></i>
                                             </div>
                                             <div class="explorer_info">
-                                                <h3><a href="single_listings.html">Barber</a></h3>
+                                                <h3><a href="/post">Barber</a></h3>
                                                 <p>700/D, Kings road, Green lane, London</p>
                                                 <ul>
                                                     <li> <i class="fa fa-phone"></i>
@@ -227,7 +228,7 @@ const AppPosts = () => {
                                         <i class="flaticon-beach"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Saintmartine</a></h3>
+                                        <h3><a href="/post">Saintmartine</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -248,7 +249,7 @@ const AppPosts = () => {
                                         <i class="flaticon-food"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Freshly Food</a></h3>
+                                        <h3><a href="/post">Freshly Food</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -269,7 +270,7 @@ const AppPosts = () => {
                                         <i class="flaticon-food-1"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Midnight</a></h3>
+                                        <h3><a href="/post">Midnight</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -291,7 +292,7 @@ const AppPosts = () => {
                                         <i class="flaticon-cabin"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Montana Resort</a></h3>
+                                        <h3><a href="/post">Montana Resort</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -312,7 +313,7 @@ const AppPosts = () => {
                                         <i class="flaticon-shop"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Yelled Shopping</a></h3>
+                                        <h3><a href="/post">Yelled Shopping</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -337,7 +338,7 @@ const AppPosts = () => {
                                         <i class="flaticon-beach"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Saintmartine</a></h3>
+                                        <h3><a href="/post">Saintmartine</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -358,7 +359,7 @@ const AppPosts = () => {
                                         <i class="flaticon-food"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Freshly Food</a></h3>
+                                        <h3><a href="/post">Freshly Food</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -379,7 +380,7 @@ const AppPosts = () => {
                                         <i class="flaticon-food-1"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Midnight</a></h3>
+                                        <h3><a href="/post">Midnight</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -400,7 +401,7 @@ const AppPosts = () => {
                                         <i class="flaticon-barbershop"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Barber</a></h3>
+                                        <h3><a href="/post">Barber</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -421,7 +422,7 @@ const AppPosts = () => {
                                         <i class="flaticon-cabin"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Montana Resort</a></h3>
+                                        <h3><a href="/post">Montana Resort</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -442,7 +443,7 @@ const AppPosts = () => {
                                         <i class="flaticon-shop"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Yelled Shopping</a></h3>
+                                        <h3><a href="/post">Yelled Shopping</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -467,7 +468,7 @@ const AppPosts = () => {
                                         <i class="flaticon-beach"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Saintmartine</a></h3>
+                                        <h3><a href="/post">Saintmartine</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -488,7 +489,7 @@ const AppPosts = () => {
                                         <i class="flaticon-food"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Freshly Food</a></h3>
+                                        <h3><a href="/post">Freshly Food</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -509,7 +510,7 @@ const AppPosts = () => {
                                         <i class="flaticon-food-1"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Midnight</a></h3>
+                                        <h3><a href="/post">Midnight</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -530,7 +531,7 @@ const AppPosts = () => {
                                         <i class="flaticon-barbershop"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Barber</a></h3>
+                                        <h3><a href="/post">Barber</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -551,7 +552,7 @@ const AppPosts = () => {
                                         <i class="flaticon-cabin"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Montana Resort</a></h3>
+                                        <h3><a href="/post">Montana Resort</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>
@@ -572,7 +573,7 @@ const AppPosts = () => {
                                         <i class="flaticon-shop"></i>
                                     </div>
                                     <div class="explorer_info">
-                                        <h3><a href="single_listings.html">Yelled Shopping</a></h3>
+                                        <h3><a href="/post">Yelled Shopping</a></h3>
                                         <p>700/D, Kings road, Green lane, London</p>
                                         <ul>
                                             <li> <i class="fa fa-phone"></i>

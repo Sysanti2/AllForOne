@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 import {RiEdit2Line} from "react-icons/ri";
 import {AiFillDelete} from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
-
+const _ = require('lodash');
 class Wtable extends Component {
    
     constructor(props)
@@ -15,16 +15,17 @@ class Wtable extends Component {
       };
    
     data = () => {
-
+            
         let header = [];
         var handleToUpdate  =   this.props.handleToUpdate;
-        if (!!this.props.data) 
+        
+        if (!_.isEmpty(this.props.data)) 
             this.props.data.map((data,index) => {
            
                 let val = Object.values(data),
                 row =[];
                 val.map( (dataRow)=> {
-                    console.log(dataRow);
+                 
                     row.push( <td key={`td-${dataRow}`}>{dataRow}</td>)
                 })
                 header.push(
@@ -66,7 +67,7 @@ class Wtable extends Component {
     }
     editeItem(id)
     {
-        console.log(id);
+      
     }
     render() {
         return (

@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+button.creatAccount.creataccountLink {
+  color: black !important;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

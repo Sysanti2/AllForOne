@@ -11,9 +11,7 @@ const AppFooter = () => {
                     <div class="col-xl-4 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <div class="footer_logo">
-                                <a href="#">
-                                    <img src={require("../img/footer_logo.png")} alt=""/>
-                                </a>
+                              
                             </div>
                             <p>
                                 Esteem spirit temper too say adieus who <br></br>     direct esteem. It esteems luckily or <br></br>  

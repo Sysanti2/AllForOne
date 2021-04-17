@@ -10,7 +10,7 @@ const AppSlide = () => {
             <div class="row align-items-center justify-content-center">
                 <div class="col-xl-10">
                     <div class="slider_text text-center justify-content-center">
-                        <p>Find Nearby Attraction</p>
+                        <p>Help Nearby peoples</p>
                         <h3>small gives make Big change</h3>
                         <div class="search_form">
                             <form action="#">

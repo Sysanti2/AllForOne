@@ -1,6 +1,6 @@
-import React, {Fragment, Component} from "react";
-
-import RadioMap from './components/radio-map';
+import React, {Fragment, useEffect,useState} from "react";
+import {useQuery} from 'react-apollo';
+import gql from 'graphql-tag';
 
 import AppSidebar from './Layout/AppSidebar';
 import AppHeader from './Layout/AppHeader';
@@ -9,29 +9,39 @@ import '../style/Dashboard/map.css';
 
 import {RiAddLine} from "react-icons/ri";
 
-class regions extends Component {
 
-    state={
-        data:  [ {'id': '23892DJ9832D', 'name': `Tanger-Tétouan`},
-                {'id': '23892DJ9832D', 'name': `Gharb-Chrarda-Beni Hssen`},
-               {'id': '23892DJ9832D', 'name': `Taza-Al Hoceima-Taounate`},
-                {'id': '23892DJ9832D', 'name': `L'Oriental`},
-                {'id': '23892DJ9832D', 'name': `Fès-Boulemane`},
-              {'id': '23892DJ9832D', 'name': `Meknès-Tafilalet`},
-                {'id': '23892DJ9832D', 'name': `Rabat-Salé-Zemmour-Zaer`},
-                {'id': '23892DJ9832D', 'name': `Chaouia-Ouardigha`},
-                {'id': '23892DJ9832D', 'name': `Doukhala-Abda`},
-                 {'id': '23892DJ9832D', 'name': `Marrakech-Tensift-Al Haouz`},
-                {'id': '23892DJ9832D', 'name': `Tadla-Azilal`},
-                 {'id': '23892DJ9832D', 'name': `Souss-Massa-Drâa`},
-                 {'id': '23892DJ9832D', 'name': `Laâyoune-Boujdour-Sakia el Hamra`},
-                {'id': '23892DJ9832D', 'name': `Guelmim-Es Smara`},
-                {'id': '23892DJ9832D', 'name': `Oued ed Dahab-Lagouira`},
+const _ = require('lodash');
 
-        ]
+
+
+const Regions = () => {
+    const [regions,SetRegions] = useState();
+
+    const {refetch: getRegions, loading} = useQuery(GET_REGION, {
+        variables: '',
+        skip: true
+    });
+
+    const handleToUpdate = (id, action) => {
+       
+      
+        
+       
+      
+
+    };
+
+    const GetRegions= async ()=>{
+        await getRegions({first:100}).then(handleThings => SetRegions(handleThings));
     }
     
-    render() {
+
+    useEffect( ()=> {
+        async function fetchData() {
+            await GetRegions();;
+           }
+           fetchData();
+    }, [])
         return (
 
             <Fragment>
@@ -42,13 +52,13 @@ class regions extends Component {
                         <div className="rowContainer">
                             <AppHeader/>
                             <div className="widgetcontainer-nopadding">
-                                <a href="#" class="btn btn-success btn-txt-primary">
+                                <a href="#" className="btn btn-success btn-txt-primary">
                                     <RiAddLine size={'2em'}/>
                                     Add New Area</a>
                             </div>
                             <div className="widgetcontainer ">
                                 <div className="card100">
-                                    <Wtable data={this.state.data}/>
+                                    <Wtable data={!_.isEmpty(regions) ?regions.data.regions:[]}/>
                                 </div>
 
                             </div>
@@ -59,6 +69,18 @@ class regions extends Component {
             </Fragment>
         );
     }
-}
 
-export default regions;
+    export default Regions
+
+
+    const GET_REGION = gql `
+
+query Regions($first:Int){
+    regions(first:$first)
+            {
+            _id
+            label
+                }
+                
+              }`;
+ 

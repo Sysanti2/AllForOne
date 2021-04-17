@@ -70,8 +70,11 @@ const AppSidebar = props => {
                     FrontEnd
                 </div>
 
-                <li className="nav-item">
-                    <a className="nav-link">
+                <li
+                    className={`nav-item ${props.active === 'post'
+                    ? 'active'
+                    : ''}`}>
+                    <a className="nav-link"href="/posts">
                         < RiArticleLine/>
                         <span>Posts</span>
                     </a>
