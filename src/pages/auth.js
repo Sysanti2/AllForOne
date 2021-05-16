@@ -128,8 +128,8 @@ if ( this.state.isLogin)
             <div>
            <div className="flex-container">
 
-<div style={{'flexGrow': '8'}}>
-<img src={require('../img/slide1.jpg')} alt="" sizes="" style={{'width':'100%'}}/>
+<div className="center" style={{'flexGrow': '9'}}>
+<img class="center" src={require('../img/_Group.png')} alt="" sizes="" style={{'width':'75%'}}/>
 <h4 className="wordCarousel">    
         <span>Help people and give them </span>  
         <div> 
@@ -143,7 +143,7 @@ if ( this.state.isLogin)
     </h4>
 </div>
 
-<div className="authform" style={{'flexGrow': '4'}}>
+<div className="authform" style={{'flexGrow': '3'}}>
 <form onSubmit={this.submitHandler}>
 
 

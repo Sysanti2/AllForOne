@@ -10,6 +10,10 @@ button.creatAccount.creataccountLink {
   color: black !important;
 }
 
+/*listing dropDown */ 
+.miniContainner{
+  padding: 0 3.5rem;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

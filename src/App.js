@@ -10,6 +10,7 @@ import categories from './Dashboard/categories';
 import posts from './Dashboard/posts';
 import post from './pages/post';
 import HomePage from './HomePage';
+import AppListing from '../src/compenents/AppListing'
 
 class App extends Component {
     state = {
@@ -47,7 +48,7 @@ class App extends Component {
                         <Route path='/posts' component={posts}/>
                         <Route path='/Commants' component={categories}/>
                         <Route path='/Post' component={post}/>
-
+                        <Route path='/Listing' component={AppListing}/>
                         
                          {this.state.token && (<Route path="/home" component={Index}/>)}
                         <Route path="/admin" component={null}/>

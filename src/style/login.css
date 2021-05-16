@@ -13,6 +13,7 @@
 
 body {
     font-family: 'Quicksand', "Roboto", "Helvetica", "Arial", sans-serif;
+    background: aliceblue;
 }
 
 .txt {
@@ -27,18 +28,20 @@ body {
     margin: 8px 0 76px;
 }
 .FullName {
-    display: flex;
+    width:100%
 }
 .block {
-    width: 50%;
+   /* width: 50%; */
     margin: 0 1PX;
+    height: 58px !important ;
 }
 .authform {
     position: relative;
     /* height: 422PX; */
+    position: relative;
     border-radius: 4PX;
-    background: #ffffff;
-    border-left: 1px solid #ccc;
+    background: #ffffff !important;
+    border-left: 2px solid #ccc;
 }
 .forgotpassword {
     position: absolute;
@@ -47,7 +50,8 @@ body {
     padding: 6px 14PX;
 }
 .creataccountLink {
-    font-size: 14px;
+    padding: 0 12px;
+    font-size: 13px !important;
     width: 100%;
 
 }
@@ -79,7 +83,8 @@ label.txt.incorrect {
 
     width: 100px;
     margin: 10px;
-    font-size: 30px;
+    font-size: 24px;
+    background-color: aliceblue;
 }
 /* Bordered form */
 
@@ -116,6 +121,9 @@ button {
     float: right;
     border-radius: 3px !important;
     FONT-SIZE: 16PX !important;
+}
+.auth button {
+    width: 100%;
 }
 
 /* Add a hover effect for buttons */

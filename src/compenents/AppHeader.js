@@ -20,7 +20,7 @@ const AppHeader = () => {
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="/HomePage">home</a></li>
-                                        <li><a href="/Listings">Categories</a></li>
+                                        <li><a href="">Categories</a></li>
                                         <li><a href="#">Posts <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 
