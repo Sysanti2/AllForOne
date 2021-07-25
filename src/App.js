@@ -9,6 +9,7 @@ import regions from './Dashboard/regions';
 import categories from './Dashboard/categories';
 import posts from './Dashboard/posts';
 import post from './pages/post';
+import Addpost from './pages/Addpost';
 import HomePage from './HomePage';
 import AppListing from '../src/compenents/AppListing'
 
@@ -22,7 +23,9 @@ class App extends Component {
 
         this.setState({token: token, UserId: UserId})
     };
-    logout = () => {}
+    logout = () => {
+        this.setState({token: null, UserId: null})
+    }
     render() {
         return (
 
@@ -37,6 +40,7 @@ class App extends Component {
                     <Switch>
                         {!this.state.token && <Redirect from='/' to='/HomePage' exact/>}
                         {this.state.token && <Redirect from='/auth' to='/home' exact/>}
+                        {this.state.token && <Redirect from='/home' to='/HomePage' exact/>}
                         {!this.state.token && <Redirect from='/home' to='/auth' exact/>}
 
                         <Route path='/HomePage' component={HomePage}/>
@@ -48,6 +52,7 @@ class App extends Component {
                         <Route path='/posts' component={posts}/>
                         <Route path='/Commants' component={categories}/>
                         <Route path='/Post' component={post}/>
+                        <Route path='/Addpost' component={Addpost}/>
                         <Route path='/Listing' component={AppListing}/>
                         
                          {this.state.token && (<Route path="/home" component={Index}/>)}

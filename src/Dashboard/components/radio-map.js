@@ -1,6 +1,6 @@
 import React from 'react';
-import Morocco from '@svg-maps/morocco';
-import RadioSVGMap from './radioSvgMap';
+//import Morocco from '@svg-maps/morocco';
+//import RadioSVGMap from './radioSvgMap';
 import { getLocationName } from './utils';
 
 class RadioMap extends React.Component {
@@ -58,13 +58,7 @@ class RadioMap extends React.Component {
 					
 				</div>
 				<div className="examples__block__map examples__block__map--Morocco">
-					<RadioSVGMap
-						map={Morocco}
-						onLocationMouseOver={this.handleLocationMouseOver}
-						onLocationMouseOut={this.handleLocationMouseOut}
-						onLocationFocus={this.handleLocationFocus}
-						onLocationBlur={this.handleLocationBlur}
-						onChange={this.handleOnChange} />
+					
 				</div>
                 <div className="examples__block__info__item">
 						Pointed location: {this.state.pointedLocation}

@@ -112,6 +112,8 @@ if ( this.state.isLogin)
                userId = resData.data.login._id;
                tokenExpiration = resData.data.login.tokenExpiration;
             }
+              //  <AuthContext.Provider value={{ token : token ,userId:userId  }} > </AuthContext.Provider>
+           
             if(token)
             {
                 this.setState({isLogin:true});

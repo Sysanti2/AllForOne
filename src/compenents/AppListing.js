@@ -1,9 +1,11 @@
 import { Fragment } from "react";
 import React from "react";
+import AppHeader from "./AppHeader"
 
 const AppListing = () => {
   return (
     <Fragment>
+      <AppHeader></AppHeader>
       <div className="">
         <div class="explorer_europe list_wrap">
           <div class="miniContainner">
@@ -28,11 +30,15 @@ const AppListing = () => {
                         <div class="input_field">
                           <select class="wide">
                             <option data-display="Choose categories">
-                              cat 1
+                            Services
                             </option>
-                            <option value="1">cat 2</option>
-                            <option value="2">cat 3</option>
-                            <option value="3">cat 4</option>
+                            <option value="1">Health </option>
+                            <option value="2">Grandparents </option>
+                            <option value="3">Homlesse</option>
+                            <option value="3">Services</option>
+                            <option value="3">Gifts</option>
+                            <option value="3">Animals</option>
+                            <option value="3">Projects</option>
                           </select>
                         </div>
                         <div class="input_field">
@@ -67,7 +73,10 @@ const AppListing = () => {
                       </form>
                     </div>
                     <div class="last_range">
-                      <button class="boxed-btn2">Reset</button>
+                      <button class="boxed-btn2 btnmove">search</button>
+                    </div>
+                    <div class="last_range">
+                      <button class="boxed-btn2 ">Reset</button>
                     </div>
                   </div>
                 </div>
@@ -87,7 +96,7 @@ const AppListing = () => {
                       <div class="explorer_bottom d-flex">
                         <div class="explorer_info">
                           <h3>
-                            <a href="#">In Search of Tomorrow</a>
+                            <a href="/post">In Search of Tomorrow</a>
                           </h3>
                           <p>
                             The definitive ‘80s Sci-Fi documentary featuring

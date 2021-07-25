@@ -889,7 +889,9 @@ h3 {
     width: 100%;
     top: 0;
     z-index: 9;
-    position: sticky;
+    position: fixed;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 @media (max-width: 767px) {
     /* line 1, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_header.scss */
@@ -1388,6 +1390,7 @@ h3 {
 .slider_area {
     position: relative;
     z-index: 0;
+    margin-top: 64px;
 }
 
 /* line 10, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_slider.scss */
@@ -4192,6 +4195,7 @@ p #amount {
 /* line 9, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_explorer.scss */
 .explorer_europe.list_wrap {
     padding: 50px;
+    margin-top: 64px;
 }
 
 /* line 13, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_explorer.scss */
@@ -9243,4 +9247,28 @@ select.wide {
 }
 button.creatAccount.creataccountLink {
     color: black !important;
+}
+.btnRed {
+    width: 100%;
+    color: #f9f9ff !important;
+    background: #f91842;
+    border: 1px solid #fff
+}
+.btnvitage{
+    width: 100%;
+    color: #f9f9ff !important;
+    background:  #2c9faf;
+    border: 1px solid #fff
+   
+}
+.btnmove{
+    width: 100%;
+    color: #f9f9ff !important;
+    background:  #3e2c5a;
+    border: 1px solid #fff
+   
+}
+
+.mt-64{
+    margin-top: 64px;
 }

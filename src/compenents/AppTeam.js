@@ -14,61 +14,8 @@ const AppTeam = () => {
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="single_team">
-                        <div class="team_thumb">
-                            <img src={require("../img/team/1.png")} alt=""/>
-                            <div class="social_link">
-                                <ul>
-                                    <li><a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    </li>
-                                    <li><a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    </li>
-                                    <li><a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team_info text-center">
-                            <h3>Soukaina</h3>
-                            <p>Business Agent</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="single_team">
-                        <div class="team_thumb">
-                            <img src={require("../img/team/2.png")}  alt=""/>
-                            <div class="social_link">
-                                <ul>
-                                    <li><a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    </li>
-                                    <li><a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    </li>
-                                    <li><a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team_info text-center">
-                            <h3>Chaimae</h3>
-                            <p>Business Agent</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="col-xl-3 col-lg-3 col-md-6"></div>
+       <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single_team">
                         <div class="team_thumb">
                             <img src={require("../img/team/3.png")} alt=""/>
@@ -90,8 +37,8 @@ const AppTeam = () => {
                             </div>
                         </div>
                         <div class="team_info text-center">
-                            <h3>Soukaina</h3>
-                            <p>Business Agent</p>
+                            <h3>Khalid Elfaker</h3>
+                            <p>CO-founder</p>
                         </div>
                     </div>
                 </div>
@@ -118,10 +65,11 @@ const AppTeam = () => {
                         </div>
                         <div class="team_info text-center">
                             <h3>Ahmed El Mehdi</h3>
-                            <p>Business Agent</p>
+                            <p>CO-founder</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-3 col-lg-3 col-md-6"></div>
             </div>
         </div>
     </div>

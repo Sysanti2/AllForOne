@@ -17,8 +17,8 @@ class HomePage extends Component {
                 <AppHeader/>
                 <AppSlide />
                 <AppCategory />
-                <div class="container">
-                    <h3 class="titre">Lastest offers & Demandes
+                <div className="container">
+                    <h3 className="titre">Lastest offers & Demandes
                     </h3>
                 </div>
                 <AppPosts/>

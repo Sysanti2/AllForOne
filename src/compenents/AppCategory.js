@@ -48,11 +48,11 @@ const AppCategory = () => {
        
     }, []);
     return (
-        <div class="popular_catagory_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title mb-60 text-center">
+        <div className="popular_catagory_area">
+        <div  id="categorie" className="container">
+            <div  className="row">
+                <div className="col-xl-12">
+                    <div   className="section_title mb-60 text-center">
                         <p>Discover</p>
                         <h3>
                             Most Popular Categories
@@ -60,16 +60,16 @@ const AppCategory = () => {
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div className="row">
             { !_.isEmpty(categories)  && !_.isUndefined(categories.data.categories) && !_.isEmpty(categories.data.categories) ?  categories.data.categories.map((dt, index) =>
-                 <div class="col-xl-3 col-md-4 col-lg-3">
-                 <div class="single_catagory">
-                     <div class="thumb">
+                 <div className="col-xl-3 col-md-4 col-lg-3">
+                 <div className="single_catagory">
+                     <div className="thumb">
                      <Image source={dt.picture} />
                      </div>
-                     <div class="hover_overlay">
-                         <div class="hover_inner">
-                             <a href="Listings.html"><h4 class="text-center"> {dt.label}</h4></a>
+                     <div className="hover_overlay">
+                         <div className="hover_inner">
+                             <a href="/Listing"><h4 className="text-center"> {dt.label}</h4></a>
 
                          </div>
                      </div>
